@@ -2,7 +2,7 @@ import time
 import random
 
 # List of potentials ennemies
-ennemies = ["pirate", "dragon", "wickie fairie", "troll", "wolf", "witch", "minotaur"]
+ennemies = ["pirate", "dragon", "wickie fairie", "troll", "wolf", "witch"]
 # Hand of the player ; items he is carrying
 hand = ["dagger"]
 # Variable name for the sword
@@ -37,7 +37,7 @@ def valid_input(prompt, choices):
     for item in choices:
         if choice == item:
             return choice
-    valid_input(prompt, choices)
+    return valid_input(prompt, choices)
 
 
 # Path when the player decides to knock at the door
